@@ -14,6 +14,10 @@
           <element id="library" level="project" name="Maven: org.apache.lucene:lucene-queries:5.3.1" />
           <element id="library" level="project" name="Maven: org.apache.lucene:lucene-sandbox:5.3.1" />
           <element id="library" level="project" name="Maven: org.apache.lucene:lucene-analyzers-common:5.3.1" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-analyzers-smartcn:5.3.1" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-highlighter:5.3.1" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-join:5.3.1" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-memory:5.3.1" />
         </element>
       </element>
       <element id="directory" name="META-INF">
