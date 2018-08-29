@@ -16,57 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IndexingTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hao/lucene/IndexingTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SearchTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hao/lucene/SearchTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Indexer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hao/lucene/Indexer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Searcher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hao/lucene/Searcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexingTest2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hao/lucene/IndexingTest2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="408">
+              <caret line="69" column="48" lean-forward="false" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -235,7 +189,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IndexingTest2.search">
+  <component name="RunManager" selected="JUnit.SearchTest.testQueryParser">
     <configuration name="Indexer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -305,7 +259,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="IndexingTest.testIndexWriter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTest.testQueryParser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.hao.lucene.*" />
@@ -316,8 +270,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.hao.lucene" />
-      <option name="MAIN_CLASS_NAME" value="com.hao.lucene.IndexingTest" />
-      <option name="METHOD_NAME" value="testIndexWriter" />
+      <option name="MAIN_CLASS_NAME" value="com.hao.lucene.SearchTest" />
+      <option name="METHOD_NAME" value="testQueryParser" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -330,24 +284,30 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="Searcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTest.testTermQuery" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.hao.lucene.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.hao.lucene.Searcher" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <module name="luceneDemo" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="PACKAGE_NAME" value="com.hao.lucene" />
+      <option name="MAIN_CLASS_NAME" value="com.hao.lucene.SearchTest" />
+      <option name="METHOD_NAME" value="testTermQuery" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="luceneDemo" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
       <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
@@ -432,18 +392,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Indexer" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Searcher" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.IndexingTest.testIndexWriter" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.IndexingTest2.index" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.IndexingTest2.search" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.IndexingTest2.index" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.IndexingTest2.search" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SearchTest.testTermQuery" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SearchTest.testQueryParser" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.IndexingTest2.search" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.IndexingTest2.index" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.IndexingTest.testIndexWriter" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Searcher" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Indexer" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SearchTest.testQueryParser" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SearchTest.testTermQuery" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Indexer" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.IndexingTest2.search" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.IndexingTest2.index" />
       </list>
     </recent_temporary>
   </component>
@@ -460,7 +420,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535504711833</updated>
-      <workItem from="1535504717818" duration="11917000" />
+      <workItem from="1535504717818" duration="12329000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1535508873720</created>
@@ -518,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535524350950</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="项目初始化">
+      <created>1535524915720</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1535524915720</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -537,9 +504,18 @@
     <history-entry file="IndexingTest_testIndexWriter - 2018.08.29 at 10h 39m 38s.xml">
       <configuration name="IndexingTest.testIndexWriter" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SearchTest_testQueryParser - 2018.08.29 at 14h 48m 01s.xml">
+      <configuration name="SearchTest.testQueryParser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchTest_testQueryParser - 2018.08.29 at 14h 48m 28s.xml">
+      <configuration name="SearchTest.testQueryParser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchTest_testTermQuery - 2018.08.29 at 14h 47m 52s.xml">
+      <configuration name="SearchTest.testTermQuery" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11917000" />
+    <option name="totallyTimeSpent" value="12329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1299" height="784" extended-state="6" />
@@ -643,14 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-queryparser/5.3.1/lucene-queryparser-5.3.1.jar!/org/apache/lucene/queryparser/classic/QueryParser.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10200">
-          <caret line="519" column="25" lean-forward="false" selection-start-line="519" selection-start-column="14" selection-end-line="519" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/5.3.1/lucene-core-5.3.1.jar!/org/apache/lucene/index/IndexWriter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -674,14 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="536">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hao/lucene/Indexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -716,10 +676,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-queryparser/5.3.1/lucene-queryparser-5.3.1.jar!/org/apache/lucene/queryparser/classic/QueryParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="37" column="41" lean-forward="false" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hao/lucene/Indexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1460">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hao/lucene/SearchTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state relative-caret-position="408">
+          <caret line="69" column="48" lean-forward="false" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

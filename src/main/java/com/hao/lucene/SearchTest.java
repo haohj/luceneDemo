@@ -1,9 +1,12 @@
 package com.hao.lucene;
 
+import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.Term;
+import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.*;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
@@ -55,6 +58,16 @@ public class SearchTest {
      */
     @Test
     public void testQueryParser() throws Exception {
-
+        Analyzer analyzer = new StandardAnalyzer();
+        String searchField = "contents";
+        String q = "abc~";
+        QueryParser parser = new QueryParser(searchField, analyzer);
+        Query query = parser.parse(q);
+        TopDocs topDocs = searcher.search(query, 100);
+        System.out.println("匹配 " + q + "查询到" + topDocs.totalHits + "个记录");
+        for (ScoreDoc scoreDoc : topDocs.scoreDocs) {
+            Document doc = searcher.doc(scoreDoc.doc);
+            System.out.println(doc.get("fullPath"));
+        }
     }
 }
