@@ -4,10 +4,9 @@ import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
+import org.apache.lucene.document.StringField;
 import org.apache.lucene.document.TextField;
-import org.apache.lucene.index.IndexReader;
-import org.apache.lucene.index.IndexWriter;
-import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.index.*;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.junit.After;
@@ -69,6 +68,63 @@ public class IndexingTest {
     public void testIndexWriter() throws Exception {
         getWriter();
         System.out.println("写入了" + writer.numDocs() + "个文档");
-        writer.close();
+    }
+
+    /**
+     * 测试读取文档
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testIndexReader() throws Exception {
+        reader = DirectoryReader.open(dir);
+        System.out.println("最大文档数：" + reader.maxDoc());
+        System.out.println("实际文档数：" + reader.numDocs());
+    }
+
+    /**
+     * 测试删除 在合并前
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testDeleteBeforeMerge() throws Exception {
+        getWriter();
+        System.out.println("删除前：" + writer.numDocs());
+        writer.deleteDocuments(new Term("id", "1"));
+        writer.commit();
+        System.out.println("writer.maxDoc()：" + writer.maxDoc());
+        System.out.println("writer.numDocs()：" + writer.numDocs());
+    }
+
+    /**
+     * 测试删除 在合并后
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testDeleteAfterMerge() throws Exception {
+        getWriter();
+        System.out.println("删除前：" + writer.numDocs());
+        writer.deleteDocuments(new Term("id", "1"));
+        writer.forceMergeDeletes(); // 强制删除
+        writer.commit();
+        System.out.println("writer.maxDoc()：" + writer.maxDoc());
+        System.out.println("writer.numDocs()：" + writer.numDocs());
+    }
+
+    /**
+     * 测试更新
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testUpdate() throws Exception {
+        getWriter();
+        Document doc = new Document();
+        doc.add(new StringField("id", "1", Field.Store.YES));
+        doc.add(new StringField("city", "qingdao", Field.Store.YES));
+        doc.add(new TextField("desc", "dsss is a city.", Field.Store.NO));
+        writer.updateDocument(new Term("id", "1"), doc);
     }
 }
