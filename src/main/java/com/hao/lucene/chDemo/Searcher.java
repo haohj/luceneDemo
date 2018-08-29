@@ -50,7 +50,7 @@ public class Searcher {
     }
 
     public static void main(String[] args) {
-        String indexDir="D:\\lucene6";
+        String indexDir="D:\\lucene";
         String q="南京文明";
         try {
             search(indexDir,q);
